@@ -1,0 +1,14 @@
+{
+    "name": "@ao.ink/wao",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "test": "source $HOME/.cargo/env && node --experimental-wasm-memory64 --test --test-concurrency=1",
+        "test-only": "source $HOME/.cargo/env && node --experimental-wasm-memory64 --test-only --test-concurrency=1",
+        "test-all": "source $HOME/.cargo/env && node --experimental-wasm-memory64 --test --test-concurrency=1 test/**/*.test.js"
+    },
+    "dependencies": {
+        "wao": "^0.38.0"
+    }
+}
